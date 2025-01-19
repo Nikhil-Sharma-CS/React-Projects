@@ -6,7 +6,7 @@ import {
 
 interface TypographyProps extends MuiTypographyProps {
   text: string;
-  variant: "h1" | "h2" | "h3" | "h4" | "h5";
+  variant: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 }
 
 const Typography: React.FC<TypographyProps> = ({ ...props }) => {
