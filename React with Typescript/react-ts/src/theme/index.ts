@@ -13,4 +13,5 @@ export const theme = createTheme({
       default: "#ffffff",
     },
   },
+  spacing: 4,
 });
