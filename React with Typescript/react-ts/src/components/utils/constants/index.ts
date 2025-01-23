@@ -7,4 +7,5 @@ export const TextConstants = {
   TROUBLE_LOGGIN_IN: "Trouble logging in?",
   OR_LOGIN_WITH: "Or, Log in with",
   POCKET_PAY: "Pocket Pay",
+  SIGN_IN: "Sign In",
 };
