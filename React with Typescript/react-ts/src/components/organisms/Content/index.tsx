@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "../../atoms/Typography";
 import { TextConstants } from "../../utils/constants";
 import Button from "../../atoms/Button";
+import { StyledLogInButton } from "./index.styles";
 
 const Content = () => {
   return (
