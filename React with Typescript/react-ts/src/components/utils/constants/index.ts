@@ -9,3 +9,5 @@ export const TextConstants = {
   POCKET_PAY: "Pocket Pay",
   SIGN_IN: "Sign In",
 };
+
+export const Icons = [{}, {}];
