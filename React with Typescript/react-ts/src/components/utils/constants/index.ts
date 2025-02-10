@@ -1,7 +1,3 @@
-import GOOGLEICON from "../../../../public/assets/icons/google.svg";
-import FACEBOOKICON from "../../../../public/assets/icons/facebook.svg";
-import APPLEICON from "../../../../public/assets/icons/apple.svg";
-
 export const TextConstants = {
   ENTER_YOUR_PASSWORD: "Enter your password",
   ENTER_YOUR_EMAIl: "Enter your email address",
@@ -17,11 +13,13 @@ export const TextConstants = {
   APPLE_ICON: "Apple Icon",
 };
 
+const BASE_URL = "/assets/icons";
+
 export const Icons = [
   {
-    src: GOOGLEICON,
+    src: `${BASE_URL}/google.svg`,
     alt: TextConstants.GOOGLE_ICON,
   },
-  { src: FACEBOOKICON, alt: TextConstants.FACEBOOK_ICON },
-  { src: APPLEICON, alt: TextConstants.APPLE_ICON },
+  { src: `${BASE_URL}/facebook.svg`, alt: TextConstants.FACEBOOK_ICON },
+  { src: `${BASE_URL}/apple.svg`, alt: TextConstants.APPLE_ICON },
 ];
