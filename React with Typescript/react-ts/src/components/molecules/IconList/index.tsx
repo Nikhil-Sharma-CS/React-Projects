@@ -1,11 +1,7 @@
 import React from "react";
 import { Icons } from "../../utils/constants";
 import Icon from "../../atoms/Icon";
-import { Box, styled } from "@mui/material";
-
-const StyledIconContainer = styled(Box)(({}) => ({
-  display: "flex",
-}));
+import { StyledIconContainer } from "./index.styles";
 
 const IconList = () => {
   return (
