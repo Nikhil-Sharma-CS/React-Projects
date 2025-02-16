@@ -11,9 +11,10 @@ export const TextConstants = {
   GOOGLE_ICON: "Google Icon",
   FACEBOOK_ICON: "Facebook Icon",
   APPLE_ICON: "Apple Icon",
+  POCKETPAY_ICON: "PocketPay Icon",
 };
 
-const BASE_URL = "/assets/icons";
+export const BASE_URL = "/assets/icons";
 
 export const Icons = [
   {
