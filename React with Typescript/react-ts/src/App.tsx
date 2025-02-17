@@ -3,13 +3,15 @@ import "./App.css";
 import HelperText from "./components/molecules/HelperText";
 import Content from "./components/organisms/Content";
 import IconList from "./components/molecules/IconList";
+import PocketPay from "./components/template/PocketPay";
 
 function App() {
   return (
     <>
-      <HelperText />
+      {/* <HelperText />
       <Content />
-      <IconList />
+      <IconList /> */}
+      <PocketPay />
     </>
   );
 }
