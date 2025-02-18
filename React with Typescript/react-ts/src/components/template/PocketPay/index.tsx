@@ -21,6 +21,7 @@ const PocketPay = () => {
         <Icon
           src={`${BASE_URL}/pocketpay.svg`}
           alt={TextConstants.POCKETPAY_ICON}
+          height={`${theme.spacing(5)}px`}
         />
       </StyledHeader>
     </StyledContainer>
