@@ -1,26 +1,30 @@
 export const TextConstants = {
-  ENTER_YOUR_PASSWORD: "Enter your password",
-  ENTER_YOUR_EMAIl: "Enter your email address",
-  WELCOME_BACK: "Welcome Back",
+  WELCOME: "Welcome Back",
   LOG_IN: "Log in",
-  REMEMBER_ME: "Remember me",
-  TROUBLE_LOGGIN_IN: "Trouble logging in?",
+  ENTER_EMAIL: "Enter your email address",
+  ENTER_PASS: "Enter your password",
+  DISPLAY_EMAIL: "Hi! User, Your Email Id is: ",
   OR_LOGIN_WITH: "Or, Log in with",
-  POCKET_PAY: "Pocket Pay",
-  SIGN_IN: "Sign In",
-  GOOGLE_ICON: "Google Icon",
-  FACEBOOK_ICON: "Facebook Icon",
-  APPLE_ICON: "Apple Icon",
-  POCKETPAY_ICON: "PocketPay Icon",
 };
 
-export const BASE_URL = "/assets/icons";
+const BASE_URL = "/assets/icons";
 
-export const Icons = [
+export const ICON_LIST = [
   {
-    src: `${BASE_URL}/google.svg`,
-    alt: TextConstants.GOOGLE_ICON,
+    src: `${BASE_URL}/googleIcon.svg`,
+    alt: "Google Icon",
   },
-  { src: `${BASE_URL}/facebook.svg`, alt: TextConstants.FACEBOOK_ICON },
-  { src: `${BASE_URL}/apple.svg`, alt: TextConstants.APPLE_ICON },
+  {
+    src: `${BASE_URL}/facebookIcon.svg`,
+    alt: "Facebook Icon",
+  },
+  {
+    src: `${BASE_URL}/appleIcon.svg`,
+    alt: "Apple Icon",
+  },
 ];
+
+export const PP_ICON = {
+  svg: `${BASE_URL}/pocketPay.svg`,
+  alt: "Pocket Pay Icon",
+};

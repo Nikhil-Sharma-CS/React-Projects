@@ -1,30 +1,37 @@
 import { Box, styled } from "@mui/material";
 import React from "react";
 import Icon from "../../atoms/Icon";
-import { BASE_URL, TextConstants } from "../../utils/constants";
+import { PP_ICON } from "../../utils/constants";
+import FormSegment from "../../organisms/FormSegment";
 import { theme } from "../../../theme";
 
 const StyledContainer = styled(Box)(({}) => ({
   display: "flex",
+  gap: theme.spacing(10),
+  flexDirection: "column",
+  marginTop: theme.spacing(41),
+  marginLeft: theme.spacing(106),
+  width: theme.spacing(129),
 }));
 
 const StyledHeader = styled(Box)(({}) => ({
   display: "flex",
+  width: theme.spacing(25),
   marginTop: theme.spacing(6),
   marginLeft: theme.spacing(20),
 }));
 
 const PocketPay = () => {
   return (
-    <StyledContainer>
+    <>
       <StyledHeader>
-        <Icon
-          src={`${BASE_URL}/pocketpay.svg`}
-          alt={TextConstants.POCKETPAY_ICON}
-          height={`${theme.spacing(5)}px`}
-        />
+        <Icon src={PP_ICON.svg} alt={PP_ICON.alt}></Icon>
       </StyledHeader>
-    </StyledContainer>
+
+      <StyledContainer>
+        <FormSegment />
+      </StyledContainer>
+    </>
   );
 };
 
