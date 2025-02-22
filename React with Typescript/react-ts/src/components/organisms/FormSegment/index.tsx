@@ -47,7 +47,7 @@ const FormSegment: React.FC = () => {
   const navigate = useNavigate();
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const passwordRegex = /^[a-zA-Z0-9._%+-]{8,}$/;
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z0-9._%+-]{8,}$/;
 
   const handleSubmit = () => {
     if (emailRegex.test(email) && passwordRegex.test(password)) {
