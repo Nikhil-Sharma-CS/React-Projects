@@ -9,7 +9,7 @@ const StyledContainer = styled(Box)(({}) => ({
   display: "flex",
   gap: theme.spacing(10),
   flexDirection: "column",
-  marginTop: theme.spacing(41),
+  marginTop: theme.spacing(4),
   marginLeft: theme.spacing(106),
   width: theme.spacing(129),
 }));
