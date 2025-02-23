@@ -1,46 +1,93 @@
-# Getting Started with Create React App
+# 🚀 React Login Page with Validation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Description
 
-## Available Scripts
+This project demonstrates the fundamental setup of a React TypeScript login page with email and password validation. It leverages the `useState` hook to manage input field states, ensuring that the login button is enabled only when all validation criteria are met. Additionally, React Router is used to navigate to a new page displaying the logged-in email upon successful authentication.
 
-In the project directory, you can run:
+## ✨ Features
 
-### `yarn start`
+- ✅ Email and password validation using React's `useState` hook.
+- 🔒 Form input validation to enable/disable the login button dynamically.
+- 🔄 React Router implementation for navigation after successful login.
+- 📩 Displaying the user's email on the next page upon successful authentication.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠 Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- ⚛️ **React** with **TypeScript**
+- 🚀 **Create React App (CRA)** for project scaffolding
+- 🛤 **React Router** for navigation
 
-### `yarn test`
+## ⚡ Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+No installation required. You can simply fork the repository and use it directly.
 
-### `yarn build`
+## 🚀 Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. 📥 Clone or fork the repository.
+2. 📝 Open the project in your preferred code editor.
+3. ▶️ Run the project using:
+   ```sh
+   npm start
+   ```
+4. 🔑 Enter valid credentials on the login page.
+5. 🎯 Upon successful validation, you will be redirected to a new page displaying your email.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+react-login-validation/
+│-- src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.tsx
+│   ├── index.tsx
+│-- public/
+│-- package.json
+│-- tsconfig.json
+│-- README.md
+```
 
-### `yarn eject`
+## ⚙️ Configuration
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+No additional configuration is required.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📜 Scripts
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Start the development server:**
+  ```sh
+  npm start
+  ```
+- **Build for production:**
+  ```sh
+  npm run build
+  ```
+- **Run tests:**
+  ```sh
+  npm test
+  ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🖼 Output Screenshots
 
-## Learn More
+- **Default Page**
+  ![Default Page](image.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Invalid Email**
+  ![Invalid Email](image-1.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Valid Email with No password**
+  ![Valid Email](image-2.png)
+
+- **Valid Email with Valid Password**
+  ![valid Email with Valid Password](image-3.png)
+
+- **Next Page**
+  ![Next Page](image-4.png)
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repository and submit pull requests with improvements or new features.
+
+## 📬 Contact
+
+- 🏠 GitHub: [Nikhil-Sharma-CS](https://github.com/Nikhil-Sharma-CS)
+- ✉️ Email: [nikhilsharma9076@gmail.com](mailto:nikhilsharma9076@gmail.com)

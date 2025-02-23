@@ -1,34 +1,34 @@
 import React from "react";
-import Checkbox from "@mui/material/Checkbox";
+import { Box, styled } from "@mui/material";
+import { theme } from "../../../theme";
 
-interface SimpleCheckboxProps {
-  checked: boolean;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  disabled?: boolean;
-  color?:
-    | "default"
-    | "primary"
-    | "secondary"
-    | "error"
-    | "info"
-    | "success"
-    | "warning";
+interface CheckboxProps {
+  label: string;
 }
 
-const SimpleCheckbox: React.FC<SimpleCheckboxProps> = ({
-  checked,
-  onChange,
-  disabled = false,
-  color = "primary",
-}) => {
+const StyledLabel = styled("label")(() => ({
+  display: "flex",
+  alignItems: "center",
+  gap: theme.spacing(2),
+  cursor: "pointer",
+}));
+
+const StyledCheckbox = styled("input")(() => ({
+  width: theme.spacing(4),
+  height: theme.spacing(4),
+  color: theme.palette.primary.main,
+}));
+
+const StyledText = styled("span")(() => ({
+  fontSize: "0.875rem",
+  color: theme.palette.grey[700],
+}));
+
+export const Checkbox: React.FC<CheckboxProps> = ({ label }) => {
   return (
-    <Checkbox
-      checked={checked}
-      onChange={onChange}
-      disabled={disabled}
-      color={color}
-    />
+    <StyledLabel>
+      <StyledCheckbox type="checkbox" />
+      <StyledText>{label}</StyledText>
+    </StyledLabel>
   );
 };
-
-export default SimpleCheckbox;

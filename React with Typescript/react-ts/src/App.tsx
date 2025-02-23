@@ -1,13 +1,18 @@
 import React from "react";
 import "./App.css";
-import HelperText from "./components/molecules/HelperText";
-import Content from "./components/organisms/Content";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DisplayPage from "./components/pages/DisplayPage";
+import LoginPage from "./components/pages/LoginPage";
 
 function App() {
   return (
     <>
-      <HelperText />
-      <Content />
+      <Router>
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/display" element={<DisplayPage />} />
+        </Routes>
+      </Router>
     </>
   );
 }

@@ -7,18 +7,24 @@ import {
 import { theme } from "../../../theme";
 
 interface ButtonProps extends MuiButtonProps {
-  text: string;
+  text?: string;
+  isDisabled?: boolean;
   onClick?: () => void;
 }
 
 const StyledButton = styled(MuiButton)(({}) => ({
-  width: "516px",
-  backgroundColor: theme.palette.secondary.light,
-  borderRadius: "56px",
-  boxShadow: "#5533FF3D",
+  width: theme.spacing(129),
+  backgroundColor: theme.palette.primary.dark,
+  color: "#ffffff",
+  borderRadius: theme.spacing(14),
 }));
+
 const Button: React.FC<ButtonProps> = ({ ...props }) => {
-  return <StyledButton onClick={props.onClick}>{props.text}</StyledButton>;
+  return (
+    <StyledButton disabled={props.isDisabled} onClick={props.onClick}>
+      {props.text}
+    </StyledButton>
+  );
 };
 
 export default Button;
