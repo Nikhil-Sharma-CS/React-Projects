@@ -69,19 +69,23 @@ No additional configuration is required.
 ## 🖼 Output Screenshots
 
 - **Default Page**
-  ![Default Page](image.png)
+  ![Screenshot 2025-02-23 212017](https://github.com/user-attachments/assets/53f9c4d9-9ed0-49da-a348-04a97f46e303)
+
 
 - **Invalid Email**
-  ![Invalid Email](image-1.png)
+  ![Screenshot 2025-02-23 212105](https://github.com/user-attachments/assets/cc3fed84-a2ff-4cab-a320-ddb89cb9a458)
+
 
 - **Valid Email with No password**
-  ![Valid Email](image-2.png)
+  ![Screenshot 2025-02-23 212139](https://github.com/user-attachments/assets/fc581ac1-6761-493e-b4f2-4a131de12852)
+
 
 - **Valid Email with Valid Password**
-  ![valid Email with Valid Password](image-3.png)
+  ![Screenshot 2025-02-23 212209](https://github.com/user-attachments/assets/dddefa57-a0e8-41a7-9af8-b334930c51ed)
+
 
 - **Next Page**
-  ![Next Page](image-4.png)
+  ![Screenshot 2025-02-23 212242](https://github.com/user-attachments/assets/1f4f1a4b-5580-4b1d-bdc2-974a4699b425)
 
 ## 🤝 Contributing
 
