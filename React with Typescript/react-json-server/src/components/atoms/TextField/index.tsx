@@ -5,12 +5,14 @@ import {
 } from "@mui/material";
 
 type TextFieldProps = MuiTextFieldProps & {
-  text?: string;
+  placeholder?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 const TextField: React.FC<TextFieldProps> = ({ ...props }) => {
-  return <MuiTextField onChange={props.onChange}>{props.text}</MuiTextField>;
+  return (
+    <MuiTextField onChange={props.onChange} placeholder={props.placeholder} />
+  );
 };
 
 export default TextField;
